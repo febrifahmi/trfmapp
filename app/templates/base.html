@@ -8,9 +8,9 @@
     </head>
     <body>
         <div>TRFM App: 
-          <a href="/index">Home</a> 
-          <a href="/login">Login</a>
-          <a href="/about">About</a>
+          <a href="{{ url_for('index') }}">Home</a> 
+          <a href="{{ url_for('login') }}">Login</a>
+          <a href="{{ url_for('about') }}">About</a>
         </div>
         <hr>
         {% with messages = get_flashed_messages() %}
